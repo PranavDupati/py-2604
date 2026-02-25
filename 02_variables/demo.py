@@ -41,3 +41,10 @@ print(type(student_gpa))
 print(type(student_passed))
 print(type(student_failed))
 print(type(student_aadhar))
+
+# id() -> gives memory address 
+id(student_name)
+print(id(student_name))
+print(id(student_age))
+number = 25 
+print(id(number))
