@@ -68,3 +68,35 @@ data = Student()
 print(type(data))
 print(data.student_id)
 print(data.student_name)
+
+# Type Conversion / Implicit Conversion [Automatic]
+n1 = 10 # int 
+n2 = 5.5 # float 
+sum = n1 + n2 
+print(sum) 
+print(type(sum))
+
+# Type Casting / Explicit Conversion [ Manual ]
+price = 1120.85
+print(price)
+print(type(price))
+
+round_off_price = price
+print(round_off_price)
+print(type(round_off_price))
+
+# data_type(value)
+round_off_price = int(price)
+print(round_off_price)
+print(type(round_off_price))
+
+# Some user in a web page was filling some form(text boxes), 
+# which has some rating (Strings)
+
+rating = "5"
+print(type(rating))
+rating = int(rating)
+if rating >= 4: # TypeError: '>=' not supported between instances of 'str' and 'int'
+    print("Positive Feedback")
+else:
+    print("Negative Feedback")

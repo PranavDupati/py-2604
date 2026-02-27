@@ -682,3 +682,90 @@
 
             class CustomDataType:
                 statements
+
+
+27th Feb 2026
+=============
+
+    -> Type Conversion / Implicit Conversion [Automatic]
+
+        -> Converting One Data type to another data type, 
+        Automatically by Python 
+
+        -> Type Conversion is SAFE i.e no DATA LOSS
+
+    
+    -> Type Casting / Explicit Conversion [ Manual ]
+
+        -> Converting One Data type to another data type, Manually by Developer 
+
+        -> Type Casting is NOT SAFE i.e DATA LOSS might occur 
+
+        -> syntax
+
+            -> data_type(value) # casting functions 
+
+
+    -> Control Statements / Control Structures 
+
+        -> Control Structures helps you determine the "flow of execution" 
+        in a python program, allowing you to "make decisions" and "repeat tasks".
+
+    -> Python has given three types of Control Structures
+
+        -> Conditional Structures / Statements (Decision Making Statements)
+
+        -> Looping Structures / Statements (Iteration Statements)
+
+        -> Branching Structures / Statements (Jump Statements)
+    
+    -> NOTE: To Work with above Control Structures, "indentation" knowledge is must
+
+
+    -> Indentation
+
+        -> Indentation in Python is a fundamental and mandatory aspect of its "syntax", 
+        used to define the structure and hierarchy of "code blocks". 
+        Unlike many other programming languages that use curly braces or keywords 
+        to delineate blocks, Python relies entirely on "consistent" indentation.
+
+        -> Using space as indentation (using spaces correctly is important)
+
+        -> Python allows for any consistent number of spaces or 
+        a single tab(4 spaces) for indentation, 
+        the widely accepted and recommended standard.
+
+            -> At least one space, but recommended is 4 space i.e tab 
+
+    -> Conditional Structures / Statements (Decision Making Statements)
+
+       -> Used to run a "block of code" based on a condition result  
+
+        -> if 
+                -> runs a block of code, if the condition is True 
+
+                    -> syntax 
+                        if condition:
+                            statements 
+
+        -> if else 
+
+                -> runs a block of code, if the condition is True 
+                    runs another block of code, if the condition is False 
+
+                    -> syntax 
+                        if condition:
+                            statements
+                        else:
+                            statements
+
+        -> NOTE: input() function reads input from the user
+        and stores the input as String 
+
+        -> Interpolation 
+
+                -> Interpolation technique replaces, place holders with actual values dynamically
+
+                -> Using "f-strings" (Formatted String Literals)
+
+                    -> we use f with print and {} as place holders 
