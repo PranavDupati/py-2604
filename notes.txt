@@ -769,3 +769,96 @@
                 -> Using "f-strings" (Formatted String Literals)
 
                     -> we use f with print and {} as place holders 
+
+
+2nd Mar 2026
+=============
+
+    -> The ternary operator in Python, also known as a 
+    "conditional expression", provides a concise way(short hand code) 
+    to write an if-else statement on a single line.
+
+    -> NOTE: It evaluates a condition and returns one of two values 
+    based on whether the condition is True or False.
+
+    -> syntax 
+        value_if_true if condition else value_if_false 
+
+    -> elif ladder 
+
+        -> elif is a keyword that stands for "else if" 
+
+            -> It is used in conditional statements to check 
+            "multiple conditions" sequentially after an initial if statement
+            
+            -> Syntax
+
+                if condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                elif condition:
+                    statements
+                else:
+                    statements
+
+
+    -> match/case statement
+
+        -> The match/case statement (introduced in Python 3.10) 
+        is used for structural "pattern matching"
+
+        -> In other programming languages we call it as switch-case 
+
+    -> syntax 
+
+            match expression:
+                case pattern_1:
+                    # code block 1    
+                case pattern_2:
+                    # code block 2
+                case pattern_3:
+                    # code block 3
+                .
+                .
+                .
+                case _:
+                    # default code block
+
+
+-> Nested Conditionals 
+
+    -> Nested conditions in Python involve placing an if or if/else 
+    statement inside another if, elif, or else block.
+
+    -> This allows the program to evaluate multiple criteria sequentially, 
+    where the inner condition is only checked if the outer condition is true. 
+
+
+    -> Looping Structures / Statements (Iteration Statements)
+
+        -> Loops in Python are used to "repeatedly" execute a block of code 
+        until a specific condition is met or for each item in a sequence.
+
+        -> The two primary types of loops are "for" loops and "while" loops. 
+
+        -> When you want to do a task multiple times, use loops 
+
+        -> "while" loop
+
+            -> while loops execute a block of code repeatedly 
+            as long as a specified condition remains True
+
+            -> syntax
+
+                while condition:
+                    statements 
+
+            -> NOTE: We use while generally, when we don't know number of
+            Iterations/Repetitions in advance
+
+

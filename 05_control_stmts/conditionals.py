@@ -95,4 +95,42 @@ else:
     # print("Not Executed")
  print("Now Executed")
  
+print('==================')
+
+# Conditional Expression
+# value_if_true if condition else value_if_false     
+age = int(input("Enter Your Age: "))
+status = "You Can Vote" if age >= 18 else "You Cannot Vote"     
+print(status)
+
+print('==================')
+
+# elif ladder 
+# Check For Grades
+marks = int(input("Enter Marks: "))
+if marks >=90:
+    print("A Grade")
+elif marks >=75:
+    print("B Grade")
+elif marks >=60:
+    print("C Grade")
+elif marks >=50:
+    print("D Grade")
+elif marks >=35:
+    print("E Grade")
+else:
+    print("FAIL")
     
+# match/case statement
+error_code = int(input("Enter Error Code - What You are Seeing: "))
+match error_code:
+    case 403:
+        print("It's Forbidden Error")
+    case 404:
+        print("It's Not Found Error")
+    case 200:
+        print("It's No Error - It's Success")
+    case 502:
+        print("It's Internal Server Error")
+    case _:
+        print("It's Invalid Error Code")
