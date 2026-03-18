@@ -1016,4 +1016,17 @@
         -> Strings are Immutable in nature 
         (Immutable = Cannot be Changed / Modified)
 
-    
+
+18th Mar 2026
+=============
+
+    -> String Methods 
+
+        -> String methods in Python are built-in methods that operate on 
+        string objects, allowing for various manipulations, transformations, and checks. 
+
+        -> https://docs.python.org/3/library/stdtypes.html#string-methods
+
+        -> It is important to note that strings in Python are immutable, 
+        meaning these methods do not modify the original string but 
+        instead return a new string with the applied changes.
