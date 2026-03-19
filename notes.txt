@@ -1030,3 +1030,9 @@
         -> It is important to note that strings in Python are immutable, 
         meaning these methods do not modify the original string but 
         instead return a new string with the applied changes.
+
+
+19th Mar 2026
+===============
+
+    -> Using Strings & String Methods From Application Point Of View 
