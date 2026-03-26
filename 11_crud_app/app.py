@@ -30,7 +30,7 @@ while True:
     print("2 - Update Student")
     print("3 - Delete Student")
     print("4 - Read Student")
-    print("5 - Exit Student")
+    print("5 - Exit Application")
     
     choice = input("Enter Your Choice (1-5): ")
     
@@ -79,23 +79,92 @@ while True:
         print("=" * 30)
         print("Updating Student")
         print("=" * 30)
+        student_id = input("Enter ID To Update: ")
+        if student_id in students:
+            new_name = input("Enter New Name: ")
+            students[student_id]['name'] = new_name
+            print("=" * 30)
+            print("Updated Student")
+            print("=" * 30)
+        else:
+            print("Student ID Doesn't Exist")
         
+        print(students) # Confirmation         
     
     elif choice == "3":
         print("=" * 30)
         print("Deleting Student")
+        student_id = input("Enter ID To Delete: ")
+        if student_id in students:
+            students.pop(student_id)
+            print("=" * 30)
+            print("Deleted Student")
+            print("=" * 30)
+        else:
+            print("Student ID Doesn't Exist")
         
+        print(students) # Confirmation  
+            
         
     elif choice == "4":
         print("=" * 30)
         print("Reading Student")
         print("=" * 30)
-        
-    
+        # {'101': {'name': 'Ravi', 'scores': [80, 90, 80], 'skills': {'git', 'python'}}}
+        # items(): used to get both keys & values 
+        for sid, data in students.items():
+            name = data['name']
+            scores = data['scores']
+            skills = data['skills']
+            
+            # Average Score 
+            total_score = 0
+            count_scores = 0 
+            
+            for score in scores:
+                total_score += score
+                count_scores += 1
+            
+            avg_score = total_score / count_scores
+            
+            # Highest Score 
+            high_score = scores[0]
+            
+            for score in scores:
+                if score > high_score:
+                   high_score = score
+                   
+            # Lowest Score 
+            low_score = scores[0] 
+            
+            for score in scores:
+                if score < low_score:
+                    low_score = score 
+                    
+            # Skills Count 
+            skills_count = 0
+            
+            for skill in skills:
+                skills_count += 1
+                
+        print(f"Student ID: {sid}")
+        print(f"Student Name: {name}")
+        print(f"All Scores: {scores}")
+        print(f"Average Score: {avg_score}")
+        print(f"Highest Score: {high_score}")
+        print(f"Lowest Score: {low_score}")
+        print(f"All Skills: {skills}")
+        print(f"All Skills Count: {skills_count}")
+            
     elif choice == "5":
         print("=" * 30)
         print("Exit Application")
-        
+        print("=" * 30)
+        # Displaying Admin Info At End
+        print("=" * 50)
+        print(f"Admin Phone Number: {ADMIN_INFO[0]}")
+        print(f"Admin Email Address: {ADMIN_INFO[1]}")
+        print("=" * 50)
         break
     
     else:
