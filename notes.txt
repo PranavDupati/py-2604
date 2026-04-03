@@ -1697,4 +1697,29 @@
                     -> from module import specific_functionality (import only what you need)  (recommended)
 
 
+3rd Apr 2026
+===============
+
+        -> Modules Implementations 
+
+    -> Reusability
+
+        -> A Block Of Code - functions (call with function_name)
+
+        -> A File Of Code - modules (call with file_name)
+
+        -> A Folder Of Code - packages (wall with folder_name)
+
+    
+    -> Package 
+
+        -> A folder with multiple "modules" (multiple python files)   
+
+        -> A package contains a special file named as __init__.py 
+
+        -> __init__.py, it can be blank, but generally we keep start up 
+                initial data or start up configurations 
+            
+        -> In order to use package, use name of the folder
+
 
