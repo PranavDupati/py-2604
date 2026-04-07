@@ -1809,4 +1809,42 @@
 
         -> NOTE: Creating & Deleting Directory / Folder can be done with above modules 
 
+
+7th Apr 2026
+===============
+
+    -> NOTE: We don't work with Text Files in real world applications 
+
+    -> Working with "CSV" data (Comma Separated Values)
+    this is for Data Oriented Courses 
+
+    -> To Work with CSV files, we have "csv" module 
+
+        -> "csv" module is widely used in "Data Oriented Applications"
+
+        -> https://www.datablist.com/learn_images/csv/google_sheet_csv.png
+
+        -> https://www.slashgear.com/img/gallery/csv-files-explained-what-they-are-and-how-to-open-them/what-are-csv-files-1699455969.jpg
+
+        -> For "Fixed Data Sets", we can use "reader" functionality from csv module
+
+            -> students.csv file
+
+        -> For "Changing Data Sets", we can use "DictReader" functionality from csv module
+
+            -> sample.csv file (structure is changed)
+
+
+    -> The main components of the csv module are:
         
+        -> csv.reader(file): Reads CSV data and returns each row as a list of strings.
+       
+        -> csv.writer(file): Writes data to a CSV file from lists.
+        
+        -> csv.DictReader(file): Reads data by mapping the information to a dictionary, 
+        using the first row as field names (keys).
+        
+        -> csv.DictWriter(file, fieldnames): Writes data from a list of dictionaries 
+        to a CSV file, using the dictionary keys as column headers.
+
+        -> NOTE: Write the header row to the CSV file using writer.writeheader()
