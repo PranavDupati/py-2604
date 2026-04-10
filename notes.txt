@@ -1896,3 +1896,7 @@
         -> json.loads()	Deserializes a JSON-formatted string to a Python object ("load string").
 
 
+10th Apr 2026
+===================
+
+    -> CURD App with Data Persistency 
