@@ -2046,3 +2046,99 @@
             -> Encapsulation
             -> Abstraction
             -> Polymorphism
+
+
+15th Apr 2026
+===============
+
+    -> Methods
+
+        -> A Method is a block of Code, Which Performs a task (Associated With Objects)
+
+        -> Methods will be inside the class 
+
+        ->                      Functions                           Methods
+
+        How To Call             function_name(args)                 object.method_name(args)
+
+        Belongs To              independent                         object 
+
+        Defined Using           def function_name                   def method_name (but inside class)  
+
+    
+    -> When working with OOP Style, one of the confusions initially is 
+
+        -> Python Automatically Passes an object(self) to method
+
+        -> self is nothing but object reference
+
+        -> "self" is recommended, but you can anything as reference
+
+
+    -> Constructors
+
+        -> In Python, the constructor is a "special method" used to initialize a 
+        newly created object's attributes (its initial state). 
+
+        -> This special method is "automatically called" when you create a new instance/object of a class. 
+
+        -> The specific method used for this purpose is named __init__()
+        
+        -> The __init__() method defines the actions that should run as soon as an object is created
+
+        -> NOTE: __init__() is defined within a class and always takes "self" as its
+            first parameter, which refers to Instance of object being created
+
+        -> __init__() can Additionally take other parameters to receive values 
+        for initializing objects attributes 
+
+        -> Syntax
+
+            class ClassName:
+                def __init__(self, parameter1, parameter2, ...):
+                    self.parameter1 = parameter1
+                    self.parameter2 = parameter2
+
+    
+    
+    -> Instance Members 
+
+        -> Instance Variables & Instance Methods (Instance means Object)
+
+            -> Instance Of a Class == Object Of a Class 
+
+        -> Instance Variables / attributes
+
+            -> Instance Variables belongs to "object" i.e instance, not the class 
+
+            -> Instance Variables are defined in __init__() method using "self" keyword
+
+            -> Each object we create has it's own copy of instance variable with different values 
+
+            -> Modifying an instance variable in one object, doesn't affect the same variable in other object 
+            i.e Unique Copies 
+
+            -> To Access Instance Variable we use self.variable_name 
+
+            -> syntax 
+
+                class Demo:
+                    def __init__(self,parameter):
+                        self.instance_var = value 
+
+        
+        -> Instance Methods 
+
+            -> Instance Methods are defined inside the class 
+            which operates on instance variables 
+
+            -> Instance Methods are Very Commonly Used methods in OOPS
+
+            -> Instance Methods always takes "self" has first parameter 
+
+            -> NOTE: Instance Methods can Access Instance Variables and also Class Variables Too 
+
+            -> Called Using object_name.method()
+
+
+
