@@ -166,3 +166,156 @@ student_mike = Student("mike","mike@gmail.com")
 student_mike.student_studies()
 
 print("=" * 50)
+
+
+# Class Variable 
+class Student:
+    
+    # Class Variable - "shared by all the objects" of the class 
+    institute_name = "Edify"
+    
+    # Constructor - to initialize a newly created object's attributes
+    def __init__(self,student_name,student_email):
+        # Below are instance variables -> self.student_name & self.student_email
+        self.student_name = student_name
+        self.student_email = student_email
+    
+    # Does Something - Behaviors / Actions / Functions / METHODS
+    # Below is Instance Method
+    def student_studies(self):
+        print("From Institute: "+Student.institute_name) # recommended (OOP)
+        print("Student Info - Student Studies")
+        print("Student Name: "+self.student_name) # recommended (OOP)
+        print("Student Email: "+self.student_email) # recommended (OOP)
+        print("From Institute: "+self.institute_name) # not recommended (OOP)
+        
+        
+# Object Creation
+# student_ravi = Student() # TypeError: Student.__init__() missing 2 required positional arguments: 'student_name' and 'student_email'
+student_ravi = Student("ravi","ravi2krishna@gmail.com")
+student_ravi.student_studies()
+
+student_john = Student("johnny","john@gmail.com") 
+student_john.student_studies()
+
+student_mike = Student("mike","mike@gmail.com") 
+student_mike.student_studies()
+
+print("=" * 50)
+
+
+# Class Method 
+class Student:
+    
+    # Class Variable - "shared by all the objects" of the class 
+    institute_name = "Edify"
+    
+    # Constructor - to initialize a newly created object's attributes
+    def __init__(self,student_name,student_email):
+        # Below are instance variables -> self.student_name & self.student_email
+        self.student_name = student_name
+        self.student_email = student_email
+    
+    # Does Something - Behaviors / Actions / Functions / METHODS
+    # Below is Instance Method
+    def student_studies(self):
+        print("From Institute: "+Student.institute_name) # recommended (OOP)
+        print("Student Info - Student Studies")
+        print("Student Name: "+self.student_name) # recommended (OOP)
+        print("Student Email: "+self.student_email) # recommended (OOP)
+        print("From Institute: "+self.institute_name) # not recommended (OOP)
+        
+    # Class Method - operates on class variables 
+    @classmethod
+    def change_institute_name(cls,new_name):
+        cls.institute_name = new_name
+        # Accessing instance data inside a class method gives error 
+        # print(self.student_email) # NameError: name 'self' is not defined
+
+
+# Object Creation
+# student_ravi = Student() # TypeError: Student.__init__() missing 2 required positional arguments: 'student_name' and 'student_email'
+student_ravi = Student("ravi","ravi2krishna@gmail.com")
+student_ravi.student_studies()
+
+student_john = Student("johnny","john@gmail.com") 
+student_john.student_studies()
+
+student_mike = Student("mike","mike@gmail.com") 
+student_mike.student_studies()
+
+# Calling Class Method
+Student.change_institute_name("Digital Edify")
+
+student_ravi = Student("ravi","ravi2krishna@gmail.com")
+student_ravi.student_studies()
+
+student_john = Student("johnny","john@gmail.com") 
+student_john.student_studies()
+
+student_mike = Student("mike","mike@gmail.com") 
+student_mike.student_studies()
+
+print("=" * 50)
+
+
+# Class Method 
+class Student:
+    
+    # Class Variable - "shared by all the objects" of the class 
+    institute_name = "Edify"
+    
+    # Constructor - to initialize a newly created object's attributes
+    def __init__(self,student_name,student_email):
+        # Below are instance variables -> self.student_name & self.student_email
+        self.student_name = student_name
+        self.student_email = student_email
+    
+    # Does Something - Behaviors / Actions / Functions / METHODS
+    # Below is Instance Method
+    def student_studies(self):
+        print("From Institute: "+Student.institute_name) # recommended (OOP)
+        print("Student Info - Student Studies")
+        print("Student Name: "+self.student_name) # recommended (OOP)
+        print("Student Email: "+self.student_email) # recommended (OOP)
+        print("From Institute: "+self.institute_name) # not recommended (OOP)
+        
+    # Class Method - operates on class variables 
+    @classmethod
+    def change_institute_name(cls,new_name):
+        cls.institute_name = new_name
+        # Accessing instance data inside a class method gives error 
+        # print(self.student_email) # NameError: name 'self' is not defined
+        
+    # Static Method - does not depend/operate on instance variable or class variable 
+    @staticmethod
+    def something_random():
+        return "I Do Something, that is not associated with Class Or Objects"
+
+# Object Creation
+# student_ravi = Student() # TypeError: Student.__init__() missing 2 required positional arguments: 'student_name' and 'student_email'
+student_ravi = Student("ravi","ravi2krishna@gmail.com")
+student_ravi.student_studies()
+
+student_john = Student("johnny","john@gmail.com") 
+student_john.student_studies()
+
+student_mike = Student("mike","mike@gmail.com") 
+student_mike.student_studies()
+
+# Calling Class Method
+Student.change_institute_name("Digital Edify")
+
+student_ravi = Student("ravi","ravi2krishna@gmail.com")
+student_ravi.student_studies()
+
+student_john = Student("johnny","john@gmail.com") 
+student_john.student_studies()
+
+student_mike = Student("mike","mike@gmail.com") 
+student_mike.student_studies()
+
+# Calling Static Method
+print(Student.something_random())
+
+print("=" * 50)

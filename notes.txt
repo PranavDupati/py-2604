@@ -2141,4 +2141,99 @@
             -> Called Using object_name.method()
 
 
+16th Apr 2026
+===============
 
+    -> Class Members 
+
+        -> Class Variables & Class Methods (Class Based, not Object based)
+
+    -> Class Variables / attributes
+
+        -> Class Variables are shared across all the instances of class 
+        i.e "shared by all the objects" of the class 
+
+        -> Class Variables belong to class, rather than objects, ideal for  
+        storing data that is common/fixed for all objects 
+
+        -> Defined inside the class, but outside the methods 
+
+        -> Accessed using Classname.variable_name or object.variable_name 
+
+            -> recommended is using Classname.variable_name
+
+        -> NOTE: Class Variables are "memory efficient" as 
+        only one copy is there unlike multiple copies like objects 
+
+        -> syntax
+
+            class Demo:
+                class_var = "i'm shared data"
+                
+    
+    -> Class Methods 
+
+        -> Methods inside the class, which operates on class variables 
+
+        -> Not very commonly used 
+
+        -> Class Methods take "cls" as the first parameter 
+
+        -> Class Methods are defined using @classmethod decorator 
+
+        -> Can be accessed using Class Name or object, recommended is Classname 
+
+        -> Accessing instance data inside a class method gives error 
+
+
+
+    -> Static Members 
+
+        -> In python we don't have Static Variables 
+
+            -> In other languages like java static variable is equivalent to Class Variable 
+
+            -> Static Variable == Class Variable
+
+        -> Static Methods 
+
+            -> Static Methods are not bound to either class or object 
+
+            -> Static Methods does not depend on instance variable or class variable 
+
+            -> Not a commonly used method 
+
+            -> Don't take self or cls as first parameter 
+
+            -> NOTE : Behaves like a normal function, but inside a class  
+
+            -> Declared used @staticmethod decorator 
+
+            -> Used as utilities / helper functions 
+
+            -> Called Using ClassName
+
+
+    -> OOP Principals 
+
+        -> Inheritance
+        -> Encapsulation
+        -> Abstraction
+        -> Polymorphism
+
+
+    -> Inheritance
+
+        -> Inheritance is a core OOP concept where a new class, 
+        called a subclass or child class, acquires the properties(vars) and methods 
+        of an existing class, called a superclass or parent class.
+
+        -> Main Purpose Of Inheritance is Code Reusability 
+
+        -> Syntax 
+
+            class Parent:
+                pass
+            
+            class Child(Parent):
+                pass 
