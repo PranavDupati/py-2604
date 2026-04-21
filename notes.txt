@@ -2358,6 +2358,31 @@
 
     
 
+21st Apr 2026
+===============
+
+    -> Polymorphism
+
+        -> Polymorphism in OOP is an ability to "Take Many Forms"
+
+        -> Polymorphism is achieved through techniques like
+
+            -> Method Overloading 
+
+            -> Method Overriding 
+
+        -> Method Overloading 
+
+            -> Method Overloading in OOP is the ability to "define multiple methods 
+            with the same name", but different parameter lists 
+            (number, type, or order of arguments) within a single class
+
+            -> NOTE: Python doesn't support traditional method Overloading
 
 
+        -> Method Overriding 
 
+            -> When a subclass provides a new implementation of a method 
+            that already exists in parent class 
+
+    -> Polymorphism: https://images.news18.com/ibnlive/uploads/2018/02/Amazon-India-UPI-Payment-Option.jpg
