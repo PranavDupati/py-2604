@@ -2283,7 +2283,7 @@
         -> Other Languages like Java or C++ "enforces" Strict Rules for Encapsulation,  
         coming to python there is no Strict enforcing. 
 
-            -> Java / C++ = "You're Not ALlowed"
+            -> Java / C++ = "You're Not allowed"
 
             -> Python = "You shouldn't, but if you insist you can"
 
